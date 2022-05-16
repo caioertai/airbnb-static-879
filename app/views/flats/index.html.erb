@@ -1,0 +1,10 @@
+<h1>AirBnB Static!</h1>
+<%# Display list of flats %>
+<ul>
+  <% @flats.each do |flat| %>
+    <%#              content, _path %>
+    <%# flat_path(145) ----> "/flats/145" %>
+    <%# flat_path(205) ----> "/flats/205" %>
+    <li><%= link_to flat.name, flat_path(flat.id) %></li>
+  <% end %>
+</ul>

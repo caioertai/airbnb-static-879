@@ -1,0 +1,13 @@
+<p><%= link_to "Back to the list", root_path %></p>
+
+<h1>Flat Details</h1>
+<img src="<%= @flat.imageUrl %>" width=300 alt="">
+<h2><%= @flat.name %></h2>
+<dl>
+  <dt>Price</dt>
+  <dd><%= @flat.price %> <%= @flat.priceCurrency %></dt>
+  <dt>Latitude</dt>
+  <dd><%= @flat.lat %></dt>
+  <dt>Longitude</dt>
+  <dd><%= @flat.lng %></dt>
+</dl>

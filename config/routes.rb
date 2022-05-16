@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  #             controller#action
+  # get "/", to: "flats#index" # FlatsController#index
+  root to: "flats#index" # FlatsController#index
+  #
+  get "/flats/:id", to: "flats#show", as: :flat
 end
